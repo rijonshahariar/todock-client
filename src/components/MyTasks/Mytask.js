@@ -8,7 +8,7 @@ const Mytask = ({ task, children }) => {
         <div>
             <Container>
                 <Row>
-                    <div className="col-md-8 mx-auto">
+                    <div className="col-md-10 mx-auto">
 
                         <div className="d-flex mb-3 border justify-content-center align-items-center p-2">
                             <h5>{task.status ? "Completed" :
