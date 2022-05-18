@@ -14,7 +14,7 @@ const Mytasks = () => {
 
     const handleDelete = id => {
 
-        const url = `http://localhost:5000/tasks/${id}`;
+        const url = `https://whispering-atoll-74652.herokuapp.com/tasks/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

@@ -17,7 +17,7 @@ const AddTask = () => {
             email: user.email,
             description: e.target.description.value,
         };
-        fetch('http://localhost:5000/tasks', {
+        fetch('https://whispering-atoll-74652.herokuapp.com/tasks', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

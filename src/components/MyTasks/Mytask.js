@@ -1,22 +1,8 @@
 import React, { useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
-import { toast } from 'react-toastify';
 import './MyTask.css'
 const Mytask = ({ task, children }) => {
     const [complete, setComplete] = useState(false);
-
-    const handleComplete = (id) => {
-        fetch(`http://localhost:5000/tasks/${id}`, {
-            method: "PUT"
-        })
-            .then(res => res.json())
-            .then(data => {
-                if (data.modifiedCount) {
-                    toast.success("Congrats on finishing the task");
-
-                }
-            });
-    }
 
     return (
         <div>
